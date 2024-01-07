@@ -120,9 +120,9 @@ body {
   margin: 24px 0;
 }
 
-.failure-box > ul {
+.failure-box2 > ul {
   list-style-type: none;
-  margin-left: -15px;
+  margin-left: -18px;
 }
 
 .failure {
