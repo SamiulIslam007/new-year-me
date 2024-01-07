@@ -11,7 +11,6 @@ body {
 .header {
   background: url(../Images/headerimg.png), lightgray 50% / cover no-repeat;
   height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,4 +50,76 @@ body {
   text-align: right;
   font-size: 20px;
   font-weight: 600;
+}
+
+/* Main section starts */
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+/* Failures section styles */
+
+.failures {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+  padding: 130px 0;
+}
+
+.failure-box1 {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.circle {
+  position: absolute;
+  top: 73%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  padding: 10px;
+  width: 530px;
+  height: 530px;
+  z-index: 5;
+  background: rgba(241, 91, 34, 0.2);
+}
+
+.failure-box1 > img {
+  position: relative;
+  z-index: 10;
+}
+
+.failure-heading {
+  color: #151414;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.failure-description {
+  color: #444343;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 24px 0;
+}
+
+.failure-box > ul {
+  list-style-type: none;
+  margin-left: -15px;
+}
+
+.failure {
+  color: #444343;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 8px 18px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  background: url("../Images/check.png ") no-repeat left center;
+  background-size: contain;
 }
