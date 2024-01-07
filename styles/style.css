@@ -7,7 +7,13 @@
 body {
   font-family: "Work Sans", sans-serif;
 }
-
+/* Shared classes */
+.btn-primary {
+  border-radius: 5px;
+  background: #fff;
+  padding: 20px 36px;
+  border: none;
+}
 .header {
   background: url(../Images/headerimg.png), lightgray 50% / cover no-repeat;
   height: 100vh;
@@ -15,6 +21,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: end;
+  background-size: cover;
+  background-position: center;
 }
 
 .right-box {
@@ -160,4 +168,45 @@ body {
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
+}
+
+/* Banner-rect section styles */
+.banner-rect {
+  position: relative;
+  margin: 130px 0;
+  height: 300px;
+  border-radius: 8px;
+  background: url(../Images/Rectangle\ 3.png),
+    lightgray 0px -177.416px / 100% 253.333%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 99;
+}
+
+.banner-rect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #f15b22 0%, rgba(241, 91, 34, 0) 100%);
+}
+.content {
+  position: absolute;
+  z-index: 100;
+  margin-top: 60px;
+  margin-left: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.banner-rect-heading {
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
