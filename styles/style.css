@@ -13,6 +13,12 @@ body {
   background: #fff;
   padding: 20px 36px;
   border: none;
+  color: #f15b22;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 .header {
   background: url(../Images/headerimg.png), lightgray 50% / cover no-repeat;
@@ -209,4 +215,59 @@ body {
   font-style: normal;
   font-weight: 700;
   margin-bottom: 25px;
+}
+
+/* footer section styles */
+.footer {
+  padding: 130px 230px;
+  background-color: #151414;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.footer-column1 {
+  width: 54%;
+}
+.footer-column2 {
+  width: 31%;
+}
+.footer-heading {
+  color: #f8f8f8;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.footer-description,
+.email,
+.phone {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.footer-description {
+  margin: 20px 0;
+}
+.email {
+  margin-bottom: 16px;
+}
+.phone {
+  margin-bottom: 32px;
+}
+
+form > input[type="email"] {
+  padding: 20px;
+  color: #f3f3f3;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #fff;
 }
